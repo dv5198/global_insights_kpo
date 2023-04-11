@@ -1,45 +1,5 @@
 <header class="header navbar-area">
-  <!-- Toolbar Start -->
-  {% comment %}
-  <div class="toolbar-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-9 col-12">
-          <div class="toolbar-contact">
-            <p>
-              <i class="lni lni-envelope"></i
-              ><a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a>
-            </p>
-            <p>
-              <i class="lni lni-phone"></i
-              ><a href="tel:+123456789">(+123) 456789</a>
-            </p>
-            <p><i class="lni lni-map-marker"></i> Location H-11,R-20/2,USA</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-3 col-12">
-          <div class="toolbar-sl-share">
-            <ul>
-              <li>
-                <a href="#"><i class="lni lni-facebook-filled"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="lni lni-twitter-original"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="lni lni-pinterest"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="lni lni-youtube"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {% endcomment %}
-  <!-- Toolbar End -->
+
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-12">
@@ -54,7 +14,7 @@
               id="navbarSupportedContent"
             >
               <ul id="nav" class="navbar-nav ms-auto">
-                {% comment %}
+
                 <li class="nav-item">
                   <a
                     class="page-scroll active"
@@ -62,7 +22,6 @@
                     >Home</a
                   >
                 </li>
-                {% endcomment %}
                 <li class="nav-item">
                   <a class="page-scroll" href="{% url 'about_us' %}"
                     >About Us</a
@@ -72,9 +31,6 @@
                   <a class="page-scroll" href="{% url 'services' %}"
                     >Services</a
                   >
-                </li>
-                <li class="nav-item">
-                  <a class="page-scroll" href="javascript:void(0)">Pricing</a>
                 </li>
                 <li class="nav-item">
                   <a class="page-scroll" href="javascript:void(0)"
@@ -89,6 +45,7 @@
                 type="button"
                 class="btn btn-primary"
                 style="border-radius: 8px"
+                 id="schedule-btn"
               >
                 Get In Touch
               </button>
@@ -101,4 +58,10 @@
     <!-- row -->
   </div>
   <!-- container -->
+    <script>
+    function openCalendly() {
+        window.open("https://calendly.com/info-gik/30min?month=2023-04", "_blank");
+    }
+    document.getElementById("schedule-btn").addEventListener("click", openCalendly);
+  </script>
 </header>
