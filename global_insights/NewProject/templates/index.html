@@ -1,0 +1,159 @@
+{% include 'base_1.html' %} {% load static %}
+<!-- Preloader -->
+<div class="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-icon">
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
+<!-- /End Preloader -->
+{% block content %}
+
+<!-- Start Hero Area -->
+{% include 'section.html' %}
+<!--/ End Hero Area -->
+<!-- Start Newsletter Area -->
+{% include 'newsletter.html' %}
+<!-- /End Newsletter Area -->
+
+<!-- Start Footer Area -->
+{% include 'footer.html' %}
+<!--/ End Footer Area -->
+{% endblock %}
+<!-- ========================= scroll-top ========================= -->
+<a href="#" class="scroll-top btn-hover">
+  <i class="lni lni-chevron-up"></i>
+</a>
+
+<!-- ========================= JS here ========================= -->
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/count-up.min.js"></script>
+<script src="static/js/wow.min.js"></script>
+<script src="static/js/tiny-slider.js"></script>
+<script src="static/js/glightbox.min.js"></script>
+<script src="static/js/imagesloaded.min.js"></script>
+<script src="static/js/isotope.min.js"></script>
+
+<script src="static/js/main.js"></script>
+{% comment %}
+<script type="text/javascript">
+  //========= glightbox
+  GLightbox({
+    href: "https://www.youtube.com/watch?v=BqI0Q7e4kbk&t=1s",
+    type: "video",
+    source: "youtube", //vimeo, youtube or local
+    width: 900,
+    autoplayVideos: true,
+  });
+
+  //====== Clients Logo Slider
+  tns({
+    container: ".client-logo-carousel",
+    slideBy: "page",
+    autoplay: true,
+    autoplayButtonOutput: false,
+    mouseDrag: true,
+    gutter: 15,
+    nav: false,
+    controls: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      540: {
+        items: 2,
+      },
+      768: {
+        items: 3,
+      },
+      992: {
+        items: 4,
+      },
+      1170: {
+        items: 6,
+      },
+    },
+  });
+
+  //======== Home Slider
+  var slider = new tns({
+    container: ".home-slider",
+    slideBy: "page",
+    autoplay: false,
+    mouseDrag: true,
+    gutter: 0,
+    items: 1,
+    nav: true,
+    controls: false,
+    controlsText: [
+      '<i class="lni lni-arrow-left prev"></i>',
+      '<i class="lni lni-arrow-right next"></i>',
+    ],
+    responsive: {
+      1200: {
+        items: 1,
+      },
+      992: {
+        items: 1,
+      },
+      0: {
+        items: 1,
+      },
+    },
+  });
+
+  //======== Testimonial Slider
+  var slider = new tns({
+    container: ".testimonial-slider",
+    slideBy: "page",
+    autoplay: false,
+    mouseDrag: true,
+    gutter: 0,
+    items: 1,
+    nav: true,
+    controls: false,
+    controlsText: [
+      '<i class="lni lni-arrow-left prev"></i>',
+      '<i class="lni lni-arrow-right next"></i>',
+    ],
+    responsive: {
+      1200: {
+        items: 2,
+      },
+      992: {
+        items: 1,
+      },
+      0: {
+        items: 1,
+      },
+    },
+  });
+
+  //============== isotope masonry js with imagesloaded
+  imagesLoaded("#container", function () {
+    var elem = document.querySelector(".grid");
+    var iso = new Isotope(elem, {
+      // options
+      itemSelector: ".grid-item",
+      masonry: {
+        // use outer width of grid-sizer for columnWidth
+        columnWidth: ".grid-item",
+      },
+    });
+
+    let filterButtons = document.querySelectorAll(
+      ".portfolio-btn-wrapper button"
+    );
+    filterButtons.forEach((e) =>
+      e.addEventListener("click", () => {
+        let filterValue = event.target.getAttribute("data-filter");
+        iso.arrange({
+          filter: filterValue,
+        });
+      })
+    );
+  });
+</script>
+{% endcomment %}

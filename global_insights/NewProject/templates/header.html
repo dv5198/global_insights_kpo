@@ -1,0 +1,104 @@
+<header class="header navbar-area">
+  <!-- Toolbar Start -->
+  {% comment %}
+  <div class="toolbar-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-9 col-12">
+          <div class="toolbar-contact">
+            <p>
+              <i class="lni lni-envelope"></i
+              ><a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a>
+            </p>
+            <p>
+              <i class="lni lni-phone"></i
+              ><a href="tel:+123456789">(+123) 456789</a>
+            </p>
+            <p><i class="lni lni-map-marker"></i> Location H-11,R-20/2,USA</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-3 col-12">
+          <div class="toolbar-sl-share">
+            <ul>
+              <li>
+                <a href="#"><i class="lni lni-facebook-filled"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="lni lni-twitter-original"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="lni lni-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="lni lni-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endcomment %}
+  <!-- Toolbar End -->
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-12">
+        <div class="nav-inner">
+          <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="{% url 'global_insights' %}">
+              <img src="static/images/logo.png" alt="Logo" />
+            </a>
+
+            <div
+              class="collapse navbar-collapse sub-menu-bar"
+              id="navbarSupportedContent"
+            >
+              <ul id="nav" class="navbar-nav ms-auto">
+                {% comment %}
+                <li class="nav-item">
+                  <a
+                    class="page-scroll active"
+                    href="{% url 'global_insights' %}"
+                    >Home</a
+                  >
+                </li>
+                {% endcomment %}
+                <li class="nav-item">
+                  <a class="page-scroll" href="{% url 'about_us' %}"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="{% url 'services' %}"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="javascript:void(0)">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="javascript:void(0)"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- navbar collapse -->
+            <div class="button">
+              <button
+                type="button"
+                class="btn btn-primary"
+                style="border-radius: 8px"
+              >
+                Get In Touch
+              </button>
+            </div>
+          </nav>
+          <!-- navbar -->
+        </div>
+      </div>
+    </div>
+    <!-- row -->
+  </div>
+  <!-- container -->
+</header>
