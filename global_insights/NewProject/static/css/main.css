@@ -1337,7 +1337,7 @@ p {
     visibility: visible;
     box-shadow: none;
     padding: 0;
-	margin:0;
+    margin: 0;
   }
 
   .navbar-nav .nav-item .sub-menu::after {

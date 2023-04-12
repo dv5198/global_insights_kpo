@@ -72,30 +72,30 @@
 
 <section class="Who_are_we section">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8 offset-lg-2 col-12">
+    <div class="row" >
+      <div class="col-lg-8 offset-lg-2 col-12" style="padding: 1px;">
         <div class="section-title">
           <h2 class="wow fadeInUp" data-wow-delay=".4s">Who we are</h2>
         </div>
       </div>
       <p class="wow fadeInUp" data-wow-delay=".6s">
-        We, Global Insights KPO are the team of certified accountants and CPAs based in India.
-         We offer a comprehensive portfolio of outsourcing solutions for various sizes of business
-          organizations. We continuously strive to ensure that our clients get best quality 
-          service with access to the latest skills and technologies in a very efficient manner. 
-          We are, emerging KPO with a team having the specialized knowledge in the field of
-           accounting, management consultancy and other financial services.
+      <b>Our vision is to be recognized as the premier a KPO firm in the industry, known for our commitment to 
+      excellence, integrity, and innovation.</b>
+      </p>
+      <br /><br /><br />
+      <p class="wow fadeInUp" data-wow-delay=".6s">
+       We, Global Insights KPO are the team of certified accountants and CPAs based in India. 
+       We offer a comprehensive portfolio of outsourcing solutions for various sizes of business organizations.
       </p>
       <br /><br /><br />
       <p>
-        We are, emerging KPO having a specialized team of accounting, management
-        consultancy and auditing services. Our team consists of certified public
-        accountants, MBA professionals, experienced accountants, semi qualified
-        and other skilled people.
+        We continuously strive to ensure that our clients get best quality service with 
+        access to the latest skills and technologies in a very efficient manner.
       </p>
       <br /><br /><br />
       <p>
-        To be recognized as the premier a KPO firm in the industry, known for our commitment to excellence, integrity, and innovation.
+        We are, emerging KPO with a team having the specialized knowledge in the field of accounting,
+         management consultancy and other financial services.
       </p>
     </div>
   </div>
@@ -103,52 +103,55 @@
 <section class="why_us section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 offset-lg-2 col-12">
+      <div class="col-lg-8 offset-lg-2 col-12" style="padding: -9px;">
         <div class="section-title">
           <h2 class="wow fadeInUp" data-wow-delay=".4s">
             Why Global Insights KPO
           </h2>
         </div>
       </div>
-      <ul class="list-group">
-        <li class="list-group-item">
-          - Experience of more than 5 years in the accounting and finance industry.
-        </li>
-        <li class="list-group-item">
-          - As we are into the profession of trust, we believe that the safety and security of data is of utmost importance. Hence, we are using the latest technologies to ensure that the client's data is kept confidential and secure.
-        </li>
-        <li class="list-group-item">
-          - Apart from traditional accounting services, our firm believes in
-          providing more insights about the financial health of your business
-          like various KPIs & ratio analysis so that the business owners can get
-          to know the overall financial picture of the business & thereby
-          becoming a valuable partner in your business success.
-        </li>
-        <li class="list-group-item">
-          - Our firm is committed to using the latest technology and innovative
-          approaches of accounting. As a result, it streamlines processes,
-          increases accuracy, and provides real-time data that can help our
-          clients to make informed business decisions.
-        </li>
-        <li class="list-group-item">
-          - We are committed to provide excellent customer service, being
-          responsive to clients' needs, and maintaining open and clear
-          communication at all times.
-        </li>
-        <li class="list-group-item">
-          - Maintaining the same level of trust & confidence for all our new
-          clients as we are having for our <b>current 40+ happy Clients </b>is
-          our top most priority.
-        </li>
-        <li class="list-group-item">
-          - We believe in consistency. Hence, we take continuous feedback from
-          our clients on a regular basis so as to maintain a higher level of
-          satisfaction from our Clients.
-        </li>
-      </ul>
+      <hr>
+      <table class="table" style="padding: 23px;">
+
+        <tbody>
+          <tr>
+            <td scope="row">- Experience of more than 5 years in the accounting and finance industry.</td>
+          </tr>
+          <tr>
+            <td scope="row">- Harnessing innovative approaches and accounting technology to deliver superior results.</td>
+          </tr>
+          <tr>
+            <td scope="row">- As we are into the profession of trust, we believe that the safety and security of
+                            data is of utmost importance. Hence, we are using the latest technologies to ensure 
+                            that the client's data is kept confidential and secure.
+            </td>
+          </tr>
+          <tr>
+            <td scope="row">- Apart from traditional accounting services, we believe in providing more
+                              insights about the financial health of your business like various KPIs & ratio 
+                              analysis so that the business owners can get to know the overall financial picture 
+                              of the business which enable us to become a valuable partner in your business 
+                              success.
+            </td>
+          </tr>   
+          <tr>
+            <td scope="row">- Committed to provide excellent customer service, being responsive\
+                              to clients' needs, and maintaining open and clear communication at all times.
+            </td>
+          </tr>   
+          <tr>
+            <td scope="row">- We believe in consistency. Hence, we take continuous feedback from our 
+                              clients on a regular intervals so as to maintain a higher level of satisfaction 
+                              of our clients.
+            </td>
+          </tr>   
+         
+        </tbody>
+      </table>
+
     </div>
-    {% comment %}
-    <div class="row">
+    <!-- oUR SERVICES-->
+    {% comment %} <div class="row">
       <div class="col-lg-4 col-md-6 col-12">
         <div
           class="single-service wow fadeInUp"
@@ -229,11 +232,11 @@
           </p>
         </div>
       </div>
-    </div>
-    {% endcomment %}
+    </div> {% endcomment %}
+  
   </div>
 </section>
-
+<!-- Our Creative Team-->
 <div class="team-area section">
   <div class="container">
     <div class="row">
@@ -252,29 +255,11 @@
         <div class="team-card wow fadeInUp" data-wow-delay=".3s">
           <div class="team-img">
             <img
-              src="static/images/img1.webp"
+              src="{% static 'images/img1.webp' %}"
               alt="Images"
               data-pagespeed-url-hash="1429878292"
               onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
             />
-            {% comment %}
-            <div class="team-social-icon">
-              <ul class="social-link">
-                <li>
-                  <a href="#"><i class="lni lni-facebook-filled"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="lni lni-twitter-original"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="lni lni-instagram-original"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="lni lni-linkedin-original"></i></a>
-                </li>
-              </ul>
-            </div>
-            {% endcomment %}
           </div>
           <div class="content">
             <h3>John Doe</h3>
@@ -290,29 +275,11 @@
         <div class="team-card wow fadeInUp" data-wow-delay=".5s">
           <div class="team-img">
             <img
-              src="static/images/img2.webp"
+              src="{% static 'images/img2.webp' %}"
               alt="Images"
               data-pagespeed-url-hash="1724378213"
               onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
             />
-            {% comment %}
-            <div class="team-social-icon">
-              <ul class="social-link">
-                <li>
-                  <a href="#"><i class="lni lni-facebook-filled"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="lni lni-twitter-original"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="lni lni-instagram-original"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="lni lni-linkedin-original"></i></a>
-                </li>
-              </ul>
-            </div>
-            {% endcomment %}
           </div>
           <div class="content">
             <h3>John Doe</h3>
@@ -328,29 +295,11 @@
         <div class="team-card wow fadeInUp" data-wow-delay=".7s">
           <div class="team-img">
             <img
-              src="static/images/img3.webp"
+              src="{% static 'images/img3.webp' %}"
               alt="Images"
               data-pagespeed-url-hash="2018878134"
               onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
             />
-            {% comment %}
-            <div class="team-social-icon">
-              <ul class="social-link">
-                <li>
-                  <a href="#"><i class="lni lni-facebook-filled"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="lni lni-twitter-original"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="lni lni-instagram-original"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="lni lni-linkedin-original"></i></a>
-                </li>
-              </ul>
-            </div>
-            {% endcomment %}
           </div>
           <div class="content">
             <h3>John Doe</h3>
@@ -369,6 +318,7 @@
 <a href="#" class="scroll-top btn-hover">
   <i class="lni lni-chevron-up"></i>
 </a>
-{% include 'company.html' %} {% include 'newsletter.html' %} {% endblock %}
+{% include 'company.html' %} {% include 'newsletter.html' %}
+ {% endblock %}
 <script type="text/javascript" src='{% static "js/validation.js" %}'></script>
 {% include 'footer.html'%}
