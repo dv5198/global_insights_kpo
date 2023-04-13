@@ -14,6 +14,7 @@
 	}
 
 
+
 	/*=====================================
 	Sticky
 	======================================= */
@@ -36,7 +37,7 @@
 
 
 	//======== tiny slider
-tns({
+	tns({
 		container: '.client-logo-carousel',
 		autoplay: true,
 		autoplayButtonOutput: false,
@@ -68,16 +69,16 @@ tns({
 	});
 	wow.init();
 
-	 //====== counter up 
-     var cu = new counterUp({
-        start: 0,
-        duration: 2000,
-        intvalues: true,
-        interval: 100,
-        append: " ",
-    });
-    cu.start();
-    
+	//====== counter up 
+	var cu = new counterUp({
+		start: 0,
+		duration: 2000,
+		intvalues: true,
+		interval: 100,
+		append: " ",
+	});
+	cu.start();
+
 	//======= portfolio-btn active
 	var elements = document.getElementsByClassName("portfolio-btn");
 	for (var i = 0; i < elements.length; i++) {
@@ -105,30 +106,30 @@ tns({
 
 // ====== scroll top js
 window.onscroll = function () {
-        var header_navbar = document.querySelector(".navbar-area");
-        var sticky = header_navbar.offsetTop;
-        if (window.pageYOffset > sticky) {
-            header_navbar.classList.add("sticky");
-        } else {
-            header_navbar.classList.remove("sticky");
-        }
-        var backToTo = document.querySelector(".scroll-top");
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            backToTo.style.display = "block";
-        } else {
-            backToTo.style.display = "none";
-        }
-    };
+	var header_navbar = document.querySelector(".navbar-area");
+	var sticky = header_navbar.offsetTop;
+	if (window.pageYOffset > sticky) {
+		header_navbar.classList.add("sticky");
+	} else {
+		header_navbar.classList.remove("sticky");
+	}
+	var backToTo = document.querySelector(".scroll-top");
+	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+		backToTo.style.display = "block";
+	} else {
+		backToTo.style.display = "none";
+	}
+};
 
 Math.easeInOutQuad = function (t, b, c, d) {
 
-	t /= d/2;
-	if (t < 1) return c/2*t*t + b;
+	t /= d / 2;
+	if (t < 1) return c / 2 * t * t + b;
 	t--;
-	return -c/2 * (t*(t-2) - 1) + b;
+	return -c / 2 * (t * (t - 2) - 1) + b;
 };
 
 document.querySelector('.scroll-top').onclick = function () {
-	scrollTo(document.documentElement); 
+	scrollTo(document.documentElement);
 }
 
