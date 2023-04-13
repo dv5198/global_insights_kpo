@@ -47,7 +47,7 @@
           "
           href="#"
           target="_blank"
-          class="button btn btn-primary"
+          class="button btn btn-primary" id="schedule-btn"
           >Schedule Free Consultation</a
         >
       </div>
@@ -237,7 +237,7 @@
   </div>
 </section>
 <!-- Our Creative Team-->
-<div class="team-area section">
+{% comment %} <div class="team-area section">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 offset-lg-2 col-12">
@@ -313,12 +313,21 @@
       </div>
     </div>
   </div>
-</div>
+</div> {% endcomment %}
 <!-- ========================= scroll-top ========================= -->
 <a href="#" class="scroll-top btn-hover">
   <i class="lni lni-chevron-up"></i>
 </a>
-{% include 'company.html' %}
+{% include 'company.html' %} 
+{% comment %} {% include 'newsletter.html' %} {% endcomment %}
  {% endblock %}
 <script type="text/javascript" src='{% static "js/validation.js" %}'></script>
+
+ <script>
+    function openCalendly() {
+        alert("Hello")
+        window.open("https://calendly.com/info-gik/30min?month=2023-04", "_blank");
+    }
+    document.getElementById("schedule-btn").addEventListener("click", openCalendly);
+  </script>
 {% include 'footer.html'%}

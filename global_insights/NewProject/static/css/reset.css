@@ -515,8 +515,8 @@ big {
 }
 
 .section {
-	padding-top: 43px;
-	padding-bottom: 45px;
+	padding-top: 1px;
+	padding-bottom: 10px;
 	position: relative;
 }
 
