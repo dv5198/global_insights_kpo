@@ -1,0 +1,59 @@
+{% include 'header.html' %}
+{% load static %}
+{% comment %} {% block title %}Famms Online Shopping| Products{% endblock %} {% endcomment %}
+{% block content %}
+<section class="page-title bg-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Drop Us A Note</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quibusdam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Registration form start -->
+<section class="contact-form">
+  <div class="container">
+    <form method="post" class="row" id="register-form" action="{% url 'user_registration' %}" >
+        {% csrf_token%}
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <div class="form-group">
+            <input name="title" type="text" id="title" class="form-control" placeholder="Title" required />
+          </div>
+          <div class="form-group">
+            <input name="f_name" type="text" id="f_name" class="form-control" placeholder="First Name" required />
+          </div>
+          <div class="form-group">
+            <input name="l_name" type="text" id="l_name" class="form-control" placeholder="Last Name" required />
+          </div>
+           <div class="form-group">
+            <input name="phno_" type="text" id="phno_" class="form-control" placeholder="Phone Number" required />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+           <div class="form-group">
+            <input name="email" type="email" id="email" class="form-control" placeholder="Email" required />
+          </div>
+          <div class="form-group">
+            <input name="user_password" type="password" id="password" class="form-control" placeholder="Password" required />
+          </div>
+          <div class="form-group">
+            <input name="confirm_password" type="password" id="confirm_password" class="form-control" placeholder="Confirm Password" required />
+          </div>
+          <button class="btn btn-default" type="submit" >Register</button>
+        </div>
+      </div>
+      <div class="error" id="error">Sorry Msg dose not sent</div>
+      <div class="success" id="success">Message Sent</div>
+    </form>
+  </div>
+</section>
+
+{% endblock %}
+{% include 'footer.html'%}

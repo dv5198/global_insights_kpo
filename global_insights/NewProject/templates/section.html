@@ -1,3 +1,4 @@
+{% load static %}
 <section class="hero-slider">
   <!-- Single Slider -->
   <div class="single-slider">
@@ -14,10 +15,8 @@
                 Outsourcing Services
               </h1>
               <p class="wow fadeInUp" data-wow-delay=".7s">
-                We offer a comprehensive portfolio of outsourcing solutions
-                for<br />
-                various sizes of business organisations.
-                <br />
+                We offer a comprehensive portfolio of outsourcing solutions for various sizes <br />
+                various sizes of business organisations.Our clients get the best quality service with access to the latest skills and technologies in a very efficient manner
               </p>
               <div class="button wow fadeInUp" data-wow-delay=".9s">
                 <a
@@ -28,47 +27,7 @@
                 ></a>
               </div>
             </div>
-            <div class="hero-text">
-              <span class="small-title">Business Solution</span>
-              <h1>
-                <span>We Provide Quality</span><br />
-                Outsourcing Services
-              </h1>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                <br />
-                industry. Lorem Ipsum has been the industry's standard
-                <br />dummy text ever since.
-              </p>
-              {% comment %}
-              <div class="button">
-                <a href="class" ="btn mouse-dir"
-                  >Discover More <span class="dir-part"></span
-                ></a>
-              </div>
-              {% endcomment %}
-            </div>
-            <div class="hero-text">
-              <span class="small-title">Business Solution</span>
-              <h1>
-                <span>We Provide Quality</span><br />
-                Consulting Services
-              </h1>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                <br />
-                industry. Lorem Ipsum has been the industry's standard
-                <br />dummy text ever since.
-              </p>
-              <div class="button">
-                <a
-                  href="class"
-                  ="btn mouse-dir btn btn-light"
-                  style="border-radius: 8px"
-                  >Discover More <span class="dir-part"></span
-                ></a>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -96,6 +55,7 @@
       <div class="col-lg-6 col-md-6 col-12">
         <div class="feature-content">
           <div class="title">
+            <br>
             <span class="wow fadeInRight" data-wow-delay=".3s"
               >Our Introduction</span
             >
@@ -111,9 +71,8 @@
             <div class="banner-content">
               <h2 class="title">Grow Your Business With US</h2>
               <p>
-                We have experience of more than 5 years in the finance industry
-                along with the experts from various global firms, we commit to
-                provide quality services to our clients.
+                Having more than 5 years of experience in the finance industry, along with experts from 
+                 global firms, we commit to providing quality services to our clients.
               </p>
             </div>
           </div>
@@ -124,8 +83,9 @@
             <div class="banner-content">
               <h2 class="title">Safety &amp; Security of data</h2>
               <p>
-                We are using the latest technologies to ensure that the client's
-                data is kept confidential and secure
+                As we are in the profession of trust, we believe that the safety & security of data
+                are of utmost importance. we use the latest technologies to ensure that customer 
+                data remains private & secure.
               </p>
             </div>
           </div>
@@ -136,11 +96,22 @@
             <div class="banner-content">
               <h2 class="title">KPI's & Ratio Analysis</h2>
               <p>
-                Our firm believes in providing more insights about the financial
-                health of your business like various KPIs & ratio analysis so
-                that the business owners can get to know the overall financial
-                picture of the business & thereby becoming a valuable partner in
-                your business success.
+                Our firm uses technology to streamline processes, increase accuracy, and provide 
+                real-time data to help clients make informed decisions.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-item wow fadeInUp" data-wow-delay=".7s">
+            <div class="feature-thumb">
+              <i class="lni lni-cloud-check"></i>
+            </div>
+            <div class="banner-content">
+              <h2 class="title">Tech-Driven Business Streamlining</h2>
+              <p>
+               Our firm is committed to using the latest technology and innovative approaches to 
+               accounting. As a result, it streamlines processes, increases accuracy, and
+                provides real-time data that can help our clients make informed business decisions.
               </p>
             </div>
           </div>
@@ -149,6 +120,7 @@
     </div>
   </div>
 </section>
+<br><br>
 <!-- End Features Area -->
 <section class="services section">
   <div class="container">
@@ -172,6 +144,12 @@
         <thead>
           <tr>
             <th scope="col">+50 Sucessfully Excuted Projects.</th>
+            <th scope="col">+40 Happy Clients</th>
+            <th scope="col">94% Client Retention Ratio</th>
+            <th scope="col">20+ softwares used</th>
+          </tr>
+          <tr>
+            {% comment %} <th scope="col"><img src="{% url 'images/success.png' %}"/></th> {% endcomment %}
             <th scope="col">+40 Happy Clients</th>
             <th scope="col">94% Client Retention Ratio</th>
             <th scope="col">20+ softwares used</th>

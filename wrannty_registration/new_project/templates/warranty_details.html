@@ -1,0 +1,94 @@
+{% include 'header.html' %}
+{% load static %}
+{% comment %} {% block title %}Famms Online Shopping| Products{% endblock %} {% endcomment %}
+{% block content %}
+<section class="page-title bg-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Warranty Details</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Warranty Details  -->
+<section class="contact-form">
+  <div class="container-fluid">
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Product</th>
+      <th scope="col">Brand</th>
+      <th scope="col">Model No.</th>
+      <th scope="col">Serial No.</th>
+      <th scope="col">Purchase Dt.</th>
+      <th scope="col">Purchase Place</th>
+      <th scope="col">Purchase Proof </th>
+      <th scope="col">Purchase </th>
+      <th scope="col">Delivery Dt. </th>
+      <th scope="col">Warranty Valid Dt.</th>
+      <th scope="col">Delivery Order</th>
+      <th scope="col">Action </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td style="font-size: 23px;">
+        <i class="ion-ios-eye"></i>&#160;&#160;
+        <i class="ion-ios-trash"></i>
+      </td>
+    </tr>
+    <h3><u>Product's Warranty Details</u></h3>
+    {% if context %}
+      {% for i in context %}
+        <tr>
+          <th scope="row">1</th>
+          <td>{{i.product}}</td>
+          <td>{{i.brand_category}}</td>
+          <td>{{i.model_number}}</td>
+          <td>{{i.serial_number}}</td>
+          <td>{{i.date_of_purchase}}</td>
+          <td>{{i.place_of_purchase}}</td>
+          <td>{{i.proof_of_purchase}}</td> 
+          <td>{{i.date_of_delivery}}</td> 
+          <td>{{i.warranty_valid_till}}</td> 
+          <td>{{i.delivery_order}}</td> 
+          <td>{{i.delivery_order}}</td> 
+          <td style="font-size: 23px;">
+            <i class="ion-ios-eye"></i>&#160;&#160;
+            <i class="ion-ios-trash"></i>
+          </td>
+        </tr>
+      {% endfor %}
+        
+    {% else %}
+        <div class="col-sm-6 col-md-4 col-lg-4">
+                                <h6>You have Ordered Nothing  </h6><br>
+                                <div class="Add-data">
+                                    <a type="button" href="#" class="btn btn-outline-danger">Shop Now</a>
+                                </div>
+                              </div>
+    {% endif %}
+    
+  </tbody>
+</table>
+  </div>
+</section>
+
+{% endblock %}
+{% include 'footer.html'%}

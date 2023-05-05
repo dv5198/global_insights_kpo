@@ -157,7 +157,7 @@ p {
 .scroll-top {
   width: 45px;
   height: 45px;
-  background: #3E54FF;
+  /* background: #3E54FF; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,8 +175,9 @@ p {
 }
 
 .scroll-top:hover {
-  color: #fff;
-  background: #333;
+  /* color: #fff;
+  background: #333; */
+  transform: scale(1.3);
 }
 
 @keyframes animation1 {

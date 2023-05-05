@@ -1,0 +1,71 @@
+{% extends 'header.html' %}
+
+{% block content %}
+<section class="vh-100 page-title bg-2">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+            <h3 class="mb-5">Sign In</h3>
+            <form class="row" method="POST" action="{% url 'user_login' %}">
+              {% csrf_token %}
+              <div class="col-sm-12">
+                <div class="block">
+                  <div class="form-group">
+                    <input name="phone_number" type="text" id="phone_number" class="form-control" placeholder="Phone Number" required />
+                  </div>
+                  <div class="form-group">
+                    <input name="user_password" type="password" id="password" class="form-control" placeholder="Password" required />
+                  </div>
+                  <div class="form-group" style="display:none;" id="enter_otp">
+                    {% if otp_sent %}
+                      {% if otp_error %}
+                        <div class="alert alert-danger" role="alert">
+                          {{ otp_error }}
+                        </div>
+                      {% else %}
+                        <div class="alert alert-success" role="alert">
+                          OTP has been sent to your registered phone number. Please enter it below.
+                        </div>
+                      {% endif %}
+                    {% endif %}
+                    <input name="otp" type="password" id="otp" class="form-control" placeholder="OTP" {% if otp_sent %} required {% endif %}>
+                  </div>
+                  {% if not otp_sent %}
+                    <button class="btn btn-md " type="button" data-toggle="button" aria-pressed="false" onclick="sendOtp()" style="background: #47424C;color: white;">Send OTP</button>
+                  {% else %}
+                    <button class="btn btn-md " type="submit" style="background: #47424C;color: white;">Sign In</button>
+                  {% endif %}
+                  <hr class="my-4">
+                  <h6>Don't have an account? <a href="#">Sign up</a></h6>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  function sendOtp() {
+    const phone_number = document.getElementById("phone_number").value;
+    const csrf_token = document.getElementsByName("csrfmiddlewaretoken")[0].value;
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "{% url 'send_otp' %}", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.setRequestHeader("X-CSRFToken", csrf_token);
+    xhr.onreadystatechange = function() {
+      if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+        document.getElementById("enter_otp").style.display = "block";
+        document.getElementById("otp").focus();
+        {% if otp_sent %}
+          location.reload();
+        {% endif %}
+      }
+    }
+    xhr.send("phone_number=" + phone_number);
+  }
+</script>
+{% endblock %}

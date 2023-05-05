@@ -1,0 +1,102 @@
+{% include 'header.html' %}
+{% load static %}
+{% comment %} {% block title %}Famms Online Shopping| Products{% endblock %} {% endcomment %}
+{% block content %}
+<section class="page-title bg-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>About Our Company</h1>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about section">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<div class="about-img">
+					<img class="img-fluid" src="/static/images/company/about.jpg">
+				</div>
+			</div>
+			<div class="col-lg-6 mt-5 mt-lg-0">
+				<div class="pl-0 pl-lg-4">
+					<h2>We strive to be the best and <br> make awesome work.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius enim, accusantium repellat ex autem numquam
+						iure officiis facere vitae itaque.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam qui vel cupiditate exercitationem, ea fuga est
+						velit nulla culpa modi quis iste tempora non, suscipit repellendus labore voluptatem dicta amet? Lorem ipsum
+						dolor sit amet, consectetur adipisicing elit. Provident, neque!</p>
+					<a href="{% url 'contact_us' %}" class="btn btn-small">Connect with Us</a>
+				</div>
+			</div>
+		</div>
+		<div class="row counter-box text-center mt-50 ">
+			<div class="col-lg-2 col-md-4 col-6 mt-4">
+				<div class="counter-item">
+					<i class="ion-ios-flask-outline"></i>
+					<h4 class="count" data-count="349">0</h4>
+					<span>Completed Projects</span>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mt-4">
+				<div class="counter-item">
+					<i class="ion-ios-flame-outline"></i>
+					<h4 class="count" data-count="35000">0</h4>
+					<span>Lines Of Code</span>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mt-4">
+				<div class="counter-item">
+					<i class="ion-ios-pint-outline"></i>
+					<h4 class="count" data-count="70">0</h4>
+					<span>Satisfied Customer</span>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mt-4">
+				<div class="counter-item">
+					<i class="ion-ios-wineglass-outline"></i>
+					<h4 class="count" data-count="10">0</h4>
+					<span>Awards Winner</span>
+				</div>
+			</div>
+
+			<div class="col-lg-2 col-md-4 col-6 mt-4">
+				<div class="counter-item">
+					<i class="ion-ios-chatboxes-outline"></i>
+					<h4 class="count" data-count="30">0</h4>
+					<span>Satisfied Customer</span>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mt-4">
+				<div class="counter-item">
+					<i class="ion-ios-body-outline"></i>
+					<h4 class="count" data-count="15">0</h4>
+					<span>Awards Winner</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="call-to-action bg-1 section-sm overly">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<h2 class="mb-3">We design delightful digital experiences.</h2>
+					<p>Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve
+						achieved for other clients, and meet our highly experienced Team who just love to design.</p>
+					<a class="btn btn-main btn-solid-border" href="{% url 'contact_us' %}">Tell Us Your Story</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}
+{% include 'footer.html'%}
