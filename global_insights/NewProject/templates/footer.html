@@ -1,3 +1,4 @@
+  {% load static %}
   <section class="newsletter section">
 
       <footer class="footer">
@@ -17,7 +18,7 @@
                                     <center>
                                     <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
                                     <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
-                                    <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/global-insights-kpo/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
                                     </center>
                                 </ul>
                             </div>
@@ -34,13 +35,9 @@
                                         <li><a href="{% url 'about_us' %}">About Company</a></li>
                                         <li><a href="{% url 'services' %}">Services We Provide</a></li>
                                         <li><a href="{% url 'services' %}">Connect with Us</a></li>
-                                        {% comment %} <li><a href="#">Happy People’s</a></li> {% endcomment %}
-                                        {% comment %} <li><a href="#">Winning Awards</a></li> {% endcomment %}
-                                        {% comment %} <li><a href="#">Company Statics</a></li> {% endcomment %}
-                                        {% comment %} <li><a href="#">Privacy Policy</a></li> {% endcomment %}
+                                        <li><a href="#">Pricing</a></li>
                                     </ul>
                                 </div>
-                                <!-- End Single Widget -->
                             </div>
                             <div class="col-lg-6 col-md-9 col-6">
                                 <!-- Single Widget -->
@@ -48,12 +45,12 @@
                                     <h3>Contact Us</h3>
                                     
                                     <ul class="footer-contact">
-                                        <li><i class="lni lni-phone"></i> <a href="#">+091 83205 46710</a></li>
-                                        <li><i class="lni lni-phone"></i> <a href="#">+1 (646)827-5815</a></li>
+                                        <li><i class="lni lni-phone"></i> <a href="tel: +091 83205 46710<">+091 83205 46710</a></li>
+                                        <li><i class="lni lni-phone"></i> <a href="tel: +16468275815">+1 (646)827-5815</a></li>
                                         <li><i class="lni lni-envelope"></i> <a
                                                 href="mailto:support@gmail.com">info@globalinsightskpo.com</a></li>
-                                        <li><i class="lni lni-map-marker"></i> Surat, Gujarat, India </li>
-                                        <li><i class="lni lni-world"></i> <a href="#">www.globalinsightskpo.com</a></li>
+                                        <li><i class="lni lni-map-marker"></i><a href="https://www.google.com/maps/place/Surat,+Gujarat/@21.1591425,72.6822102,11z/data=!3m1!4b1!4m6!3m5!1s0x3be04e59411d1563:0xfe4558290938b042!8m2!3d21.1702401!4d72.8310607!16zL20vMDFoMWhu" target="_blank">Surat, Gujarat, India </a></li>
+                                        <li><i class="lni lni-world"></i> <a href="http://globalinsightskpo.com/" target="_blank">www.globalinsightskpo.com</a></li>
                                     </ul>
                                 </div>
                                 <!-- End Single Widget -->
@@ -65,18 +62,19 @@
                         <div class="single-footer gallery">
                             <h3>Instagram Feed</h3>
                             <ul class="list">
-                                <li><a href="#"><img src="static/images/gallery1.jpg" alt="#"><i
+                                <li><a href="https://www.instagram.com/global_insights_kpo/" target="_blank"><img src="{% static 'images/gallery1.jpg' %}" alt="#"><i
                                             class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><img src="static/images/gallery2.jpg" alt="#"><i
+                                <li><a href="https://www.instagram.com/global_insights_kpo/" target="_blank"><img src="{% static 'images/gallery2.jpg' %}" alt="#"><i
                                             class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><img src="static/images/gallery3.jpg" alt="#"><i
+                                <li><a href="https://www.instagram.com/global_insights_kpo/" target="_blank"><img src="{% static 'images/gallery3.jpg' %}" alt="#"><i
                                             class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><img src="static/images/gallery4.jpg" alt="#"><i
+                                <li><a href="https://www.instagram.com/global_insights_kpo/" target="_blank"><img src="{% static 'images/gallery4.jpg' %}" alt="#"><i
                                             class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><img src="static/images/gallery5.jpg" alt="#"><i
+                                <li><a href="https://www.instagram.com/global_insights_kpo/" target="_blank"><img src="{% static 'images/gallery5.jpg' %}" alt="#"><i
                                             class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><img src="static/images/gallery6.jpg" alt="#"><i
+                                <li><a href="https://www.instagram.com/global_insights_kpo/" target="_blank"><img src="{% static 'images/gallery6.jpg' %}" alt="#"><i
                                             class="lni lni-instagram"></i></a></li>
+                               
                             </ul>
                         </div>
                         <!-- End Single Widget -->

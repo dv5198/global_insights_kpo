@@ -1554,8 +1554,8 @@ p {
   margin-bottom: 5px;
 }
 
-.Features .feature-content .title h3 {
-  font-size: 40px;
+.Features .feature-content .title h4 {
+  font-size: 25px;
   line-height: 50px;
   font-weight: 700;
 }
@@ -1760,16 +1760,16 @@ p {
   border-radius: 50%;
 }
 
-.services .single-service h3 a {
+.services .single-service h4 a {
   color: #333;
   font-weight: 600;
-  font-size: 22px;
+  /* font-size: 22px; */
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
-.services .single-service:hover h3 a {
+.services .single-service:hover h4 a {
   color: #fff;
 }
 
