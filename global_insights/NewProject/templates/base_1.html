@@ -10,7 +10,7 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="static/images/favicon.svg"
+      href="{% static 'images/favicon.svg' %}"
     />
     <!-- Place favicon.ico in the root directory -->
 
@@ -39,134 +39,12 @@
   {% block content %} {% endblock%}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   {% comment %} <script src="static/js/bootstrap.min.js"></script> {% endcomment %}
-  <script src="/static/js/count-up.min.js"></script>
-  <script src="/static/js/wow.min.js"></script>
-  <script src="/static/js/tiny-slider.js"></script>
-  <script src="/static/js/glightbox.min.js"></script>
-  <script src="/static/js/imagesloaded.min.js"></script>
-  <script src="/static/js/isotope.min.js"></script>
-  {% comment %}
-  <script src="static/js/main.js"></script>
-  {% endcomment %}
-  <script type="text/javascript">
-    {% block script %}
-    {% endblock%}
-    //========= glightbox
-    {% comment %} GLightbox({
-      href: "https://www.youtube.com/watch?v=BqI0Q7e4kbk&t=1s",
-      type: "video",
-      source: "youtube", //vimeo, youtube or local
-      width: 900,
-      autoplayVideos: true,
-    }); {% endcomment %}
-
-    //====== Clients Logo Slider
-    {% comment %} tns({
-      container: ".client-logo-carousel",
-      slideBy: "page",
-      autoplay: true,
-      autoplayButtonOutput: false,
-      mouseDrag: true,
-      gutter: 15,
-      nav: false,
-      controls: false,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        540: {
-          items: 2,
-        },
-        768: {
-          items: 3,
-        },
-        992: {
-          items: 4,
-        },
-        1170: {
-          items: 6,
-        },
-      },
-    }); {% endcomment %}
-
-    //======== Home Slider
-    {% comment %} var slider = new tns({
-      container: ".home-slider",
-      slideBy: "page",
-      autoplay: false,
-      mouseDrag: true,
-      gutter: 0,
-      items: 1,
-      nav: true,
-      controls: false,
-      controlsText: [
-        '<i class="lni lni-arrow-left prev"></i>',
-        '<i class="lni lni-arrow-right next"></i>',
-      ],
-      responsive: {
-        1200: {
-          items: 1,
-        },
-        992: {
-          items: 1,
-        },
-        0: {
-          items: 1,
-        },
-      },
-    }); {% endcomment %}
-
-    //======== Testimonial Slider
-    {% comment %} var slider = new tns({
-      container: ".testimonial-slider",
-      slideBy: "page",
-      autoplay: false,
-      mouseDrag: true,
-      gutter: 0,
-      items: 1,
-      nav: true,
-      controls: false,
-      controlsText: [
-        '<i class="lni lni-arrow-left prev"></i>',
-        '<i class="lni lni-arrow-right next"></i>',
-      ],
-      responsive: {
-        1200: {
-          items: 2,
-        },
-        992: {
-          items: 1,
-        },
-        0: {
-          items: 1,
-        },
-      },
-    }); {% endcomment %}
-
-    //============== isotope masonry js with imagesloaded
-    {% comment %} imagesLoaded("#container", function () {
-      var elem = document.querySelector(".grid");
-      var iso = new Isotope(elem, {
-        // options
-        itemSelector: ".grid-item",
-        masonry: {
-          // use outer width of grid-sizer for columnWidth
-          columnWidth: ".grid-item",
-        },
-      });
-
-      let filterButtons = document.querySelectorAll(
-        ".portfolio-btn-wrapper button"
-      );
-      filterButtons.forEach((e) =>
-        e.addEventListener("click", () => {
-          let filterValue = event.target.getAttribute("data-filter");
-          iso.arrange({
-            filter: filterValue,
-          });
-        })
-      );
-    }); {% endcomment %}
-  </script>
+  <script src="{% static 'js/count-up.min.js '%}"></script>
+  <script src="{% static 'js/wow.min.js '%}"></script>
+  <script src="{% static 'js/tiny-slider.js '%}"></script>
+  <script src="{% static 'js/glightbox.min.js '%}"></script>
+  <script src="{% static 'js/imagesloaded.min.js '%}"></script>
+  <script src="{% static 'js/isotope.min.js '%}"></script>
+  <script src="{% static 'js/main.js '%}"></script>
   {% include 'header.html' %}
 </body>

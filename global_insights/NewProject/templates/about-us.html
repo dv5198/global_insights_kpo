@@ -1,10 +1,19 @@
 {% include 'base_1.html' %} {% load static %} {% block content %}
 
+
+{% comment %} <div data-ride="carousel" class="container-fluid">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'images/company/company_2.jpg'%}" alt="Los Angeles"
+      style="width: -webkit-fill-available;">
+    </div>
+</div> {% endcomment %}
+
 <section class="page-title bg-2">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <div class="block">
+      <div class="col-md-12 company_about">
           <h1>About Our Company</h1>
           
         </div>
@@ -161,7 +170,7 @@
                               of our clients.
             </td>
           </tr>   
-         
+
         </tbody>
       </table>
 

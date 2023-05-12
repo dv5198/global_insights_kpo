@@ -622,11 +622,12 @@ big {
 	height: 562.5px;
 }
 
+
+
 .button .btn {
 	display: inline-block;
 	text-transform: capitalize;
 	font-size: 14px;
-	font-weight: 600;
 	padding: 15px 30px;
 	background-color: #ffffff;
 	color: #3E54FF;
@@ -642,6 +643,41 @@ big {
 .button .btn:hover,
 .button .btn:hover {
 	color: #ffffff;
+}
+
+div.image {
+	background-image: url("static/images/company_1.png");
+	height: 400px;
+	width: 100%;
+	display: flex;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.company_about {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+}
+
+#schedule-btn {
+	color: #333;
+	background: transparent;
+
+	border: 1px solid transparent;
+	border: 2px solid #333;
+	/* display: inline-block; */
+	text-transform: capitalize;
+	font-size: 14px;
+	padding: 10px 15px;
+	word-spacing: 2px;
+	border-radius: 8px;
+}
+
+#schedule-btn:hover {
+	border-color: #3E54FF;
+	color: #fff;
+	background-color: #3E54FF;
 }
 
 .button .btn {
