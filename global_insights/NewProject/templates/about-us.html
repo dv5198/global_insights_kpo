@@ -70,11 +70,10 @@
             opacity: 1;
             transform-style: preserve-3d;
           "
-          href="#"
+           href="https://calendly.com/info-gik/30min?month=2023-05"
           target="_blank"
           class="button btn btn-primary" id="schedule-btn"
-          >Schedule Free Consultation</a
-        >
+          >Schedule Free Consultation</a>
       </div>
     </div>
     <div class="col-sm">
@@ -185,13 +184,14 @@
 {% include 'company.html' %} 
 {% comment %} {% include 'newsletter.html' %} {% endcomment %}
  {% endblock %}
-<script type="text/javascript" src='{% static "js/validation.js" %}'></script>
-
  <script>
     function openCalendly() {
-        alert("Hello")
+       
         window.open("https://calendly.com/info-gik/30min?month=2023-04", "_blank");
     }
     document.getElementById("schedule-btn").addEventListener("click", openCalendly);
   </script>
+<script type="text/javascript" src='{% static "js/validation.js" %}'></script>
+
+ 
 {% include 'footer.html'%}

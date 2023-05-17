@@ -1,0 +1,93 @@
+[2023-05-16 05:52:46 +0000] [201885] [INFO] Handling signal: term
+[2023-05-16 05:52:46 +0000] [201886] [INFO] Worker exiting (pid: 201886)
+[2023-05-16 05:52:46 +0000] [201885] [INFO] Shutting down: Master
+[2023-05-16 05:53:03 +0000] [201920] [INFO] Starting gunicorn 20.1.0
+[2023-05-16 05:53:03 +0000] [201920] [INFO] Listening at: http://0.0.0.0:8000 (201920)
+[2023-05-16 05:53:03 +0000] [201920] [INFO] Using worker: sync
+[2023-05-16 05:53:03 +0000] [201921] [INFO] Booting worker with pid: 201921
+[2023-05-16 05:55:25 +0000] [201920] [INFO] Handling signal: term
+[2023-05-16 05:55:25 +0000] [201921] [INFO] Worker exiting (pid: 201921)
+[2023-05-16 05:55:25 +0000] [201920] [INFO] Shutting down: Master
+[2023-05-16 05:55:31 +0000] [201945] [INFO] Starting gunicorn 20.1.0
+[2023-05-16 05:55:31 +0000] [201945] [INFO] Listening at: http://0.0.0.0:8000 (201945)
+[2023-05-16 05:55:31 +0000] [201945] [INFO] Using worker: sync
+[2023-05-16 05:55:31 +0000] [201946] [INFO] Booting worker with pid: 201946
+[2023-05-16 05:57:10 +0000] [201945] [INFO] Handling signal: term
+[2023-05-16 05:57:10 +0000] [201946] [INFO] Worker exiting (pid: 201946)
+[2023-05-16 05:57:10 +0000] [201945] [INFO] Shutting down: Master
+[2023-05-16 05:57:17 +0000] [201984] [INFO] Starting gunicorn 20.1.0
+[2023-05-16 05:57:17 +0000] [201984] [INFO] Listening at: http://0.0.0.0:8000 (201984)
+[2023-05-16 05:57:17 +0000] [201984] [INFO] Using worker: sync
+[2023-05-16 05:57:17 +0000] [201985] [INFO] Booting worker with pid: 201985
+Not Found: /static/css/bootstrap.min.css
+Not Found: /static/css/LineIcons.2.0.css
+Not Found: /static/css/animate.css
+Not Found: /static/css/tiny-slider.css
+Not Found: /static/css/glightbox.min.css
+Not Found: /static/css/main.css
+Not Found: /static/css/reset.css
+Not Found: /static/css/responsive.css
+Not Found: /static/js/count-up.min.js 
+Not Found: /static/js/wow.min.js 
+Not Found: /static/js/tiny-slider.js 
+Not Found: /static/js/glightbox.min.js 
+Not Found: /static/js/imagesloaded.min.js 
+Not Found: /static/js/isotope.min.js 
+Not Found: /static/js/main.js 
+Not Found: /static/images/logo.png
+Not Found: /static/images/client__.jpg
+Not Found: /static/images/customer-service.png
+Not Found: /static/images/client_retenation1.png
+Not Found: /static/images/technology.png
+Not Found: /static/images/gallery1.jpg
+Not Found: /static/images/gallery2.jpg
+Not Found: /static/images/gallery3.jpg
+Not Found: /static/images/gallery4.jpg
+Not Found: /static/images/gallery5.jpg
+Not Found: /static/images/gallery6.jpg
+Not Found: /static/images/whatsapp.webp
+Not Found: /global_insights/NewProject/static/images/favicon.svg
+[2023-05-16 05:59:27 +0000] [201984] [INFO] Handling signal: term
+[2023-05-16 05:59:27 +0000] [201985] [INFO] Worker exiting (pid: 201985)
+[2023-05-16 05:59:28 +0000] [201984] [INFO] Shutting down: Master
+[2023-05-16 05:59:35 +0000] [202000] [INFO] Starting gunicorn 20.1.0
+[2023-05-16 05:59:35 +0000] [202000] [INFO] Listening at: http://0.0.0.0:8000 (202000)
+[2023-05-16 05:59:35 +0000] [202000] [INFO] Using worker: sync
+[2023-05-16 05:59:35 +0000] [202001] [INFO] Booting worker with pid: 202001
+Not Found: /static/css/LineIcons.2.0.css
+Not Found: /static/css/bootstrap.min.css
+Not Found: /static/css/animate.css
+Not Found: /static/css/tiny-slider.css
+Not Found: /static/css/reset.css
+Not Found: /static/css/main.css
+Not Found: /static/css/glightbox.min.css
+Not Found: /static/css/responsive.css
+Not Found: /static/js/count-up.min.js 
+Not Found: /static/js/wow.min.js 
+Not Found: /static/js/tiny-slider.js 
+Not Found: /static/js/glightbox.min.js 
+Not Found: /static/js/imagesloaded.min.js 
+Not Found: /static/js/isotope.min.js 
+Not Found: /static/js/main.js 
+Not Found: /static/images/logo.png
+Not Found: /static/images/client__.jpg
+Not Found: /static/images/customer-service.png
+Not Found: /static/images/technology.png
+Not Found: /static/images/client_retenation1.png
+Not Found: /static/images/gallery1.jpg
+Not Found: /static/images/gallery2.jpg
+Not Found: /static/images/gallery3.jpg
+Not Found: /static/images/gallery5.jpg
+Not Found: /static/images/gallery4.jpg
+Not Found: /static/images/gallery6.jpg
+Not Found: /static/images/whatsapp.webp
+[2023-05-16 06:00:11 +0000] [202000] [INFO] Handling signal: term
+[2023-05-16 06:00:11 +0000] [202001] [INFO] Worker exiting (pid: 202001)
+[2023-05-16 06:00:11 +0000] [202000] [INFO] Shutting down: Master
+[2023-05-16 06:26:01 +0000] [202157] [INFO] Starting gunicorn 20.1.0
+[2023-05-16 06:26:01 +0000] [202157] [INFO] Listening at: http://0.0.0.0:8000 (202157)
+[2023-05-16 06:26:01 +0000] [202157] [INFO] Using worker: sync
+[2023-05-16 06:26:01 +0000] [202158] [INFO] Booting worker with pid: 202158
+[2023-05-16 06:26:27 +0000] [202157] [INFO] Handling signal: term
+[2023-05-16 06:26:27 +0000] [202158] [INFO] Worker exiting (pid: 202158)
+[2023-05-16 06:26:27 +0000] [202157] [INFO] Shutting down: Master
